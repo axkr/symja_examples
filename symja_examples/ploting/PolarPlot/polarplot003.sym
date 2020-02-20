@@ -1,0 +1,1 @@
+PolarPlot(1-Cos(t), {t, 0, 2*Pi})

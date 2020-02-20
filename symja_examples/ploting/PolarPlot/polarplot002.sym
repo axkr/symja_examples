@@ -1,0 +1,1 @@
+PolarPlot(1 + 1/10*Sin(10*t), {t, 0, 2*Pi})

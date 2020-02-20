@@ -1,0 +1,7 @@
+(* Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.  *)
+
+a(steps_) := Module({a = {1, 2, 2}}, Do(a = Append(a, 1 + Mod((n - 1), 2)), {n, 3, steps}, {i, a[[n]]}); a)
+
+a( n_) := If( n < 3, Max(0, n), Module( {an = {1, 2, 2}, m = 3}, While( Length( an) < n, an = Join( an, Table( Mod(m, 2, 1), { an[[m]]} )); m++); an[[n]]))
+
+Table(a(n), {n, 1, 100})
