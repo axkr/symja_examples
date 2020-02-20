@@ -1,0 +1,7 @@
+(* Denominators in left-hand half of Kepler's tree of fractions *)
+
+b(1) = 1; b(2) = 2; b(3) = 1; 
+b(n_) := b(n) = Switch( Mod(n, 4), 0, b(n/2 + 1) + b(n/2), 1, b((n - 1)/2 + 1), 2, b((n - 2)/2 + 1) + b((n - 2)/2), 3, b((n - 3)/2)); 
+a(n_) := b(2n)
+
+Array(a, 100)

@@ -1,0 +1,6 @@
+(* 	Number of trees with n unlabeled nodes. *)
+
+b(0) = 0; b(1) = 1; b(n_) := b(n) = Sum(d*b(d)*b(n-j), {j, 1, n-1}, {d, Divisors(j)})/(n-1); a(0) = 1; a(n_) := 
+    b(n) - (Sum(b(k)*b(n-k), {k, 0, n}) - If(Mod(n, 2) == 0, b(n/2), 0))/2;
+    
+Table(a(n), {n, 0, 50})
