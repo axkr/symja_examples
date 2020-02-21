@@ -1,0 +1,3 @@
+(* 	F(2n) = bisection of Fibonacci sequence: a(n) = 3*a(n-1) - a(n-2).  *)
+
+Table(ChebyshevU(n-1, 3/2), {n, 0, 30})

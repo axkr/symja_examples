@@ -1,0 +1,1 @@
+ParametricPlot({Sin(t), Cos(t^2)}, {t, 0, 2*Pi})

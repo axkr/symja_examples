@@ -1,0 +1,3 @@
+(* Shortest legs of Heronian triangles (sides are consecutive integers, area is an integer) *)
+
+LinearRecurrence({5, -5, 1}, {1, 3, 13}, 26)

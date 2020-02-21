@@ -1,0 +1,4 @@
+(*  Array T by antidiagonals; T(i,j) = number of lattice points (x,y) hidden from (i,j), where 0<=x<=i, 0<=y<=j; 
+    (x,y) is hidden if there is a lattice point (h,k) collinear with and between (x,y) and (i,j). *)
+
+Table(Length(Select(Flatten(Table({x, y}, {x, 0, n - k}, {y, 0, k}), 1), GCD @@ # > 1 &)), {n, 0, 11}, {k, 0, n}) // Flatten

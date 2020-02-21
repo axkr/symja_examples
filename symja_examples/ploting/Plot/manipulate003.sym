@@ -1,0 +1,1 @@
+Manipulate(Plot(Sin(x)*Cos(1 + a*x), {x, 0, 2*Pi},PlotRange->{-1,1}), {a,0,10})

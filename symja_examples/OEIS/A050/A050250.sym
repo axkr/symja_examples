@@ -1,0 +1,3 @@
+(* 	Number of nonzero palindromes less than 10^n.  *)
+
+LinearRecurrence({1, 10, -10}, {9, 18, 108}, 30)

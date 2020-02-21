@@ -1,1 +1,1 @@
-Plot(StruveH(x), {x, 0, 100})
+Plot(StruveH(0, x), {x, 0, 100})

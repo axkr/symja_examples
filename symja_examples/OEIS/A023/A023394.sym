@@ -1,0 +1,3 @@
+(* Prime factors of Fermat numbers *)
+
+Select(Prime(Range(500)), IntegerQ(Log(2, MultiplicativeOrder(2, # )))&)

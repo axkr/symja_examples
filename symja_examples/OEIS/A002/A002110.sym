@@ -1,0 +1,3 @@
+(* Primorial numbers (first definition): product of first n primes. Sometimes written prime(n) *)
+
+FoldList(Times, 1, Prime(Range(20)))

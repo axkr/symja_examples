@@ -1,0 +1,3 @@
+(* a(n+1) = a(n) converted to base 9 from base 8 (written in base 10).  *) 
+
+NestList(FromDigits(IntegerDigits(#, 8), 9) &, 8, 50)

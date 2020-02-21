@@ -1,0 +1,3 @@
+(* Perfect powers: m^k where m > 0 and k >= 2 *)
+
+Join({1}, Select(Range(1770), GCD@@FactorInteger(#)[[All, 2]]>1&))

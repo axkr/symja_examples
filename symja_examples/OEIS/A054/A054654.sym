@@ -1,0 +1,5 @@
+(* 	Triangle read by rows: matrix product of the binomial coefficients with the Stirling numbers of the first kind *)
+
+crow(n_) := Reverse( CoefficientList( (-1)^n*Pochhammer(-x, n), x) )
+
+Flatten( Table(crow(n), {n, 0, 8}))

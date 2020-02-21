@@ -1,0 +1,3 @@
+(* Sum of two distinct powers of 2 *)
+
+Select(Range(1000), (Count(IntegerDigits(#, 2), 1)==2)&)

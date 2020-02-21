@@ -1,0 +1,9 @@
+(* 	Coefficients of list partition transform: reciprocal of an exponential generating function (e.g.f.).  *)
+
+b(0) = 1;
+b(n_) := b(n)=-Sum(Binomial(n, j)*a(j)*b(n-j), {j, 1, n})
+
+crow(0) = {1}; 
+crow(n_) := Coefficient(b(n), #)& /@ (Times @@ (a /@ #)&) /@ IntegerPartitions(n);  
+
+Table(crow(n), {n, 0, 8}) // Flatten
