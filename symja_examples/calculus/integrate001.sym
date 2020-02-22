@@ -1,0 +1,1 @@
+Integrate(Gamma(a + b*x)^n*PolyGamma(0, a + b*x), x)
