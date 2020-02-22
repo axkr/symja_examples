@@ -1,0 +1,3 @@
+(* print Symja Java expression without prefix F and suppress immediately evaluation with Hold() *)
+
+JavaForm(Hold(D(sin(x)*cos(x),x)), prefix->True)
