@@ -1,0 +1,4 @@
+(*  Number of forests with three connected components in the complete graph K_{n}.  *)
+
+
+Table((n-1)*(n-2) * n^(n - 6) * (n^2 + 13 n + 60)/8, {n, 1, 20})
