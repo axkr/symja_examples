@@ -1,0 +1,7 @@
+(* 	Numbers k such that the total number of 1's in the binary expansion of all the divisors of k sets a new record *)
+
+(* TODO implement DigitCount *)
+a(n_) := Plus @@ DigitCount(Divisors(n), 2, 1); am = -1; c = 0; seq={}; Do(a1 = a(n); If(a1 > am, am = a1; c++; AppendTo(seq, n)), {n, 1, 10^3})
+
+seq 
+

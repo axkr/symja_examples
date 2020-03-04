@@ -1,0 +1,3 @@
+(* a(n) = LCM { sigma(1), ..., sigma(n) } *)
+
+nn=40; With({sig=DivisorSigma(1, Range(nn))}, Table(LCM@@Take(sig, n), {n, nn}))

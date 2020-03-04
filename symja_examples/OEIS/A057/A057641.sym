@@ -1,0 +1,5 @@
+(* 	a(n) = floor(H(n) + exp(H(n))*log(H(n))) - sigma(n), where H(n) = Sum_{k=1..n} 1/k and sigma(n) (A000203) is the sum of the divisors of n. *)
+
+f(n_) := Block({h = HarmonicNumber@n}, Floor(h + Exp@h*Log@h) - DivisorSigma(1, n)); 
+
+Array(f, 100)

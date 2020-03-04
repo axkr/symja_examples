@@ -1,0 +1,5 @@
+(* Multiply-perfect numbers: n divides sigma(n). *)
+
+Do( If( Mod( DivisorSigma(1, n), n ) == 0, Print(n) ), {n, 2, 2*10^11} )
+
+Transpose( Select( Table( {n, DivisorSigma( -1, n )}, {n, 8} ), IntegerQ( # [[ 2 ]] )& ) ) [[ 1 ]] 

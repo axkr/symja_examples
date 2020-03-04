@@ -1,0 +1,3 @@
+(* Numbers n such that the set of prime divisors of n is equal to the set of prime divisors of sigma(n) *)
+
+Select(Range(10000), Transpose(FactorInteger(#))[[1]] == Transpose(FactorInteger(DivisorSigma(1, #)))[[1]] &)

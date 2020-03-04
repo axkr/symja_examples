@@ -1,0 +1,5 @@
+(* 	Numbers n such that both the harmonic and arithmetic means of the divisors of n are integers. *)
+
+a(n_) := Module({dn = Divisors(n)}, IntegerQ(Mean(dn)) && IntegerQ(HarmonicMean(dn)))
+
+Select(Range(20000), a)

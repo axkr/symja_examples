@@ -1,0 +1,4 @@
+
+(* 		Number of dissections of a ball: (3n+3)!/(2n+3)!.  *)
+
+Table((3*n + 3)!/(2*n + 3)!, {n, -1, 20})
