@@ -1,0 +1,4 @@
+(* Triangle read by rows, T(n,k) = Sum_{j=0..n} (-1)^(n-j)*C(-j-1,-n-1)*S2(k,j), S2 the Stirling set numbers A048993, for n>=0 and 0<=k<=n *)
+ 	
+
+Flatten(Table(Sum((-1)^(n-j) Binomial(-j-1, -n-1)*StirlingS2(k, j), {j, 0, n}), {n, 0, 9}, {k, 0, n}))

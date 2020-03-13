@@ -1,0 +1,4 @@
+(* Triangle read by rows, T(n,k) = Sum_{j=0..n} C(-j,-n)*S1(j,k), S1 the Stirling cycle numbers A132393, for n>=0 and 0<=k<=n. *)
+ 	
+
+Flatten(Table(Sum(Binomial(-j, -n)*Abs(StirlingS1(j, k)), {j, 0, n}), {n, 0, 9}, {k, 0, n}))
