@@ -1,0 +1,4 @@
+
+a(n_):=Module({p},p=Table(Prime(i)-2,{i,2,PrimePi(2*n+3)});Length(IntegerPartitions(2*n+1,All,p)))
+
+Array(a, 10)
