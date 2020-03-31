@@ -1,0 +1,4 @@
+(* "McNugget partitions" - Number of partitions of n into parts 6, 9 or 20. *)
+
+
+Table(Length(IntegerPartitions(i, All, {6, 9, 20})), {i,0, 100, 1})
